@@ -4,11 +4,9 @@ public class Coil {
     private int itemsRemaining;
 
     public Coil(int position, int numSlots) {
-        this.numSlots=numSlots;
-        this.position=position;
-        this.itemsRemaining=numSlots;
-
-
+        this.numSlots = numSlots;
+        this.position = position;
+        this.itemsRemaining = numSlots;
     }
 
     public void spin() {}

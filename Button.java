@@ -5,15 +5,15 @@ public class Button {
     private String itemName;
 
     public Button(int position) {
-        this.cost=cost;
-        this.position=position;
-        this.pressed=false;
-        this.itemName=itemName;
+        this.cost = cost;
+        this.position = position;
+        this.pressed = false;
+        this.itemName = itemName;
 
     }
 
     public void setCost(double cost) {
-        this.cost=cost;
+        this.cost = cost;
     }
 
     public double getCost() {
@@ -21,7 +21,7 @@ public class Button {
     }
 
     public void setItemName(String name) {
-        this.itemName=name;
+        this.itemName = name;
     }
 
     public String getItemName() {

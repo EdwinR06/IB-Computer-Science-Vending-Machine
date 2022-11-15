@@ -22,8 +22,8 @@ public class VendingMachine {
     }
 
     private void makeCoils(int slots){
-        for(int i=0; i<this.size; i++){
-            this.coils[i]=new Coil(i, slots);
+        for(int i = 0; i < this.size; i++){
+            this.coils[i] = new Coil(i, slots);
         }
     }
 
