@@ -2,9 +2,15 @@ public class VendingMachine {
     private Coil[] coils;
     private Button[] buttons;
     private int size;
-    private boolean paid;
+    private double payment;
 
-    public VendingMachine(int size) {}
+
+    public VendingMachine(int size) {
+        this.coils=new Coil[size];
+        this.buttons=new Button[size];
+        this.size=size;
+        this.payment=0;
+    }
 
     public void setCost(int button, double cost) {}
 
