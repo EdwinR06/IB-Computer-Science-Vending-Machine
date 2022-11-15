@@ -3,17 +3,15 @@ public class VendingMachine {
     private Button[] buttons;
     private int size;
     private double payment;
-    private int slots;
 
     public VendingMachine(int size, int slots) {
         this.coils=new Coil[size];
         this.buttons=new Button[size];
         this.size=size;
         this.payment=0;
-        this.slots=slots;
 
         makeButtons();
-        makeCoils();
+        makeCoils(slots);
 
     }
 
@@ -23,9 +21,9 @@ public class VendingMachine {
         }
     }
 
-    private void makeCoils(){
+    private void makeCoils(int slots){
         for(int i=0; i<this.size; i++){
-            this.coils[i]=new Coil(i, this.slots);
+            this.coils[i]=new Coil(i, slots);
         }
     }
 
