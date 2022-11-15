@@ -4,15 +4,27 @@ public class Button {
     public boolean pressed;
     private String itemName;
 
-    public Button() {
+    public Button(int position) {
+        this.cost=cost;
+        this.position=position;
+        this.pressed=false;
+        this.itemName=itemName;
 
     }
 
-    public void setCost(double cost) {}
+    public void setCost(double cost) {
+        this.cost=cost;
+    }
 
-   // public double getCost() {}
+    public double getCost() {
+        return this.cost;
+    }
 
-   public void setItemName(String name) {}
+    public void setItemName(String name) {
+        this.itemName=name;
+    }
 
-   // public String getItemName() {}
+    public String getItemName() {
+        return this.itemName;
+    }
 }
