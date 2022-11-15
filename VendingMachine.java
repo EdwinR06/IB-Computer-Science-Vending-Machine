@@ -27,9 +27,17 @@ public class VendingMachine {
         }
     }
 
-    public void setCost(int button, double cost) {}
+    public void setCost(int button, double cost) {
+        this.buttons[button].setCost(cost);
+    }
 
-    public void refill(int coil) {}
+    public void setItemName(int button, String name) {
+        this.buttons[button].setItemName(name);
+    }
+
+    public void refill(int coil) {
+        this.coils[coil].refill();
+    }
 
     public void makePayment(double amount) {}
 
